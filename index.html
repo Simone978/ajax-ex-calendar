@@ -2,18 +2,26 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title></title>
   </head>
   <body>
-    <h2 class='month_name'>Calendario</h2>
-    <div class="calendar"></div>
+    <h1>Calendario</h1>
+    <div class="direction">
+      <p class="prev">Precedente</p>
+      <p class="next">Successivo</p>
+    </div>
+    <h2 class="month_name"></h2>
+    <div class="calendar">
+      <ul></ul>
+    </div>
 
 
 
 
-    <script id="entry-template" type="text/x-handlebars-template">
+  <script id="entry-template" type="text/x-handlebars-template">
     <div class="entry">
-      <li>{{numero}} gennaio</li>
+      <li>{{numero}} {{mese}}</li>
     </div>
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
