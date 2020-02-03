@@ -24,9 +24,15 @@ $('.next').click(function(){
   if(n > 12){
     n = 1;
   }
-
   cambioMese();
-
+});
+$('.prev').click(function(){
+  $('.calendar ul li').remove();
+  n--;
+  if(n < 1){
+    n = 12;
+  }
+  cambioMese();
 });
 function cambioMese(){
   var monthName = monthNames[n-1];
