@@ -1,4 +1,9 @@
 .direction {
+  width: 200px;
   display: flex;
+  justify-content: space-between;
   cursor: pointer;
+}
+.red {
+  color: red;
 }
